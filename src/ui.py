@@ -1,9 +1,11 @@
 #******************************************************************
-# content = UI for user to select Maya object and texture files
+# content = UI for user to select Maya object and texture files (standalone)
 # author = Edwina Asumang
 #******************************************************************
 
 import sys
+import maya.OpenMayaUI as omui
+from shiboken6 import wrapInstance
 from PySide6.QtWidgets import QMainWindow, QApplication, QWidget, QVBoxLayout, QHBoxLayout, QFileDialog, QToolBox, QPushButton, QLabel, QLineEdit
 from PySide6.QtCore import Qt
 

@@ -42,7 +42,9 @@ def get_current_selection_name():
     selected_objects: list = cmds.ls(selection=True, objectsOnly=True)
     if selected_objects:
         selected_object_name = selected_objects[0]
-    return selected_object_name
+        return selected_object_name
+    else:
+        return ""
 
 
 def populate_texture_file_dict(filenames: list):
